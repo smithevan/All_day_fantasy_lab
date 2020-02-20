@@ -3,6 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="4d4672b0-1463-4e79-9ca1-c8bf0d1ec73e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Castle/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Castle/Room.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Castle/ThroneRoom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Castle/ThroneRoom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/specialPowers/IWeaponable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/specialPowers/IWeaponable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ThroneRoomTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ThroneRoomTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/ThroneRoomTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ThroneRoomTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,59 +45,64 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
   </component>
-  <component name="RunManager" selected="JUnit.ThroneRoomTest">
-    <configuration name="DungeonTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="FantasyLab" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="DungeonTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DwarfTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="FantasyLab" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="DwarfTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="KnightTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="FantasyLab" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="KnightTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="OrcTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="FantasyLab" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="OrcTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ThroneRoomTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ThroneRoomTest.checkDwarfDoesNotChallengeEnemyWhenRoomIsEmpty">
+    <configuration name="ThroneRoomTest.checkCanAddDwarfToRoom" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FantasyLab" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ThroneRoomTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="METHOD_NAME" value="checkCanAddDwarfToRoom" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ThroneRoomTest.checkCanAddKnightToRoom" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FantasyLab" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ThroneRoomTest" />
+      <option name="METHOD_NAME" value="checkCanAddKnightToRoom" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ThroneRoomTest.checkDwarfChallengesEnemyWhenEnteringRoom" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FantasyLab" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ThroneRoomTest" />
+      <option name="METHOD_NAME" value="checkDwarfChallengesEnemyWhenEnteringRoom" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ThroneRoomTest.checkDwarfDoesNotChallengeEnemyWhenRoomIsEmpty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FantasyLab" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ThroneRoomTest" />
+      <option name="METHOD_NAME" value="checkDwarfDoesNotChallengeEnemyWhenRoomIsEmpty" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ThroneRoomTest.checkRoomBeginsEmptyOfPlayers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FantasyLab" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ThroneRoomTest" />
+      <option name="METHOD_NAME" value="checkRoomBeginsEmptyOfPlayers" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ThroneRoomTest" />
-        <item itemvalue="JUnit.DungeonTest" />
-        <item itemvalue="JUnit.OrcTest" />
-        <item itemvalue="JUnit.KnightTest" />
-        <item itemvalue="JUnit.DwarfTest" />
+        <item itemvalue="JUnit.ThroneRoomTest.checkDwarfDoesNotChallengeEnemyWhenRoomIsEmpty" />
+        <item itemvalue="JUnit.ThroneRoomTest.checkDwarfChallengesEnemyWhenEnteringRoom" />
+        <item itemvalue="JUnit.ThroneRoomTest.checkCanAddDwarfToRoom" />
+        <item itemvalue="JUnit.ThroneRoomTest.checkCanAddKnightToRoom" />
+        <item itemvalue="JUnit.ThroneRoomTest.checkRoomBeginsEmptyOfPlayers" />
       </list>
     </recent_temporary>
   </component>
@@ -110,22 +120,22 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1638" height="280" key="GridCell.Tab.0.bottom" timestamp="1582211809017">
+    <state width="1638" height="280" key="GridCell.Tab.0.bottom" timestamp="1582213232975">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="280" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1582211809017" />
-    <state width="1638" height="280" key="GridCell.Tab.0.center" timestamp="1582211809016">
+    <state width="1638" height="280" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1582213232975" />
+    <state width="1638" height="280" key="GridCell.Tab.0.center" timestamp="1582213232974">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="280" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1582211809016" />
-    <state width="1638" height="280" key="GridCell.Tab.0.left" timestamp="1582211809016">
+    <state width="1638" height="280" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1582213232974" />
+    <state width="1638" height="280" key="GridCell.Tab.0.left" timestamp="1582213232973">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="280" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1582211809016" />
-    <state width="1638" height="280" key="GridCell.Tab.0.right" timestamp="1582211809016">
+    <state width="1638" height="280" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1582213232973" />
+    <state width="1638" height="280" key="GridCell.Tab.0.right" timestamp="1582213232974">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="280" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1582211809016" />
+    <state width="1638" height="280" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1582213232974" />
     <state x="100" y="123" width="1480" height="827" key="dock-window-1" timestamp="1582211806693">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
