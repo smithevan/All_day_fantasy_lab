@@ -8,4 +8,6 @@ public interface IWeaponable {
 //    void addWeapon(Sword sword);
 //    just write the signature of all the methods shared by all of your weaponable
 //    eg. GetName getDamage
+
+//    void attack();
 }
