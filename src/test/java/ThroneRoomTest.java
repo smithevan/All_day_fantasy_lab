@@ -82,9 +82,13 @@ public class ThroneRoomTest {
         assertEquals(null, throneRoom.addDwarf(dwarf));
     }
 
-    @Test
-    public void checkOrcCanKillDwarf(){
-        
-    }
+//    @Test
+//    public void checkDwarfCanAttackOrc(){
+//        throneRoom.addOrc(orc);
+//        throneRoom.addDwarf(dwarf);
+//        dwarf.attack();
+//        assertEquals();
+//
+//    }
 
 }

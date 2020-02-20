@@ -55,4 +55,9 @@ public class DwarfTest {
         dwarf.addBow(bow);
         assertEquals(1, dwarf.weaponCount());
     }
+
+    @Test
+    public void testCanAttack(){
+        assertEquals(1.00, dwarf.attack(), 0.01);
+    }
 }

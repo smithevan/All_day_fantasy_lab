@@ -30,4 +30,13 @@ public class Dwarf extends Player {
         weapons.add(bow);
     }
 
+    public double attack() {
+        //begin with weapon strength
+        //begin with enemy strength
+        //multiply weapon strength by random number, deduct output from enemy health
+        //multiply enemy strength by random number, deduct output from player health
+        //continue looping until someone is zero.
+        double randomNumber = Math.random();
+        return randomNumber;
+    }
 }

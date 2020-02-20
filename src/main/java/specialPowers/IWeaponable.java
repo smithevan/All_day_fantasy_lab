@@ -9,5 +9,5 @@ public interface IWeaponable {
 //    just write the signature of all the methods shared by all of your weaponable
 //    eg. GetName getDamage
 
-//    int attack();
+//    double attack();
 }
