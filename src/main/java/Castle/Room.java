@@ -1,7 +1,9 @@
 package Castle;
 
+import Players.IPlayable;
 import Players.Player;
 import enemies.Enemy;
+import enemies.IEnemy;
 import specialPowers.IWeaponable;
 
 import java.util.ArrayList;
@@ -9,13 +11,13 @@ import java.util.ArrayList;
 public abstract class Room {
 
     String name;
-    ArrayList<Enemy> enemies;
-    ArrayList<Player> players;
+    ArrayList<IEnemy> enemies;
+    ArrayList<IPlayable> players;
 
     public Room(String name){
         this.name = name;
-        this.enemies = new ArrayList<Enemy>();
-        this.players = new ArrayList<Player>();
+        this.enemies = new ArrayList<IEnemy>();
+        this.players = new ArrayList<IPlayable>();
     }
 
     public String getName(){

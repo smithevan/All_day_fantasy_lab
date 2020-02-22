@@ -2,15 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4d4672b0-1463-4e79-9ca1-c8bf0d1ec73e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/HealingTools/HealingTool.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/HealingTools/Herbs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Players/Cleric.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mythicalcreatures/Creatures.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mythicalcreatures/Dragon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mythicalcreatures/Ogre.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/specialPowers/ICreaturable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/specialPowers/IHealable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/treasure/Gem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/treasure/Gold.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/treasure/ITreasurable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/treasure/Treasure.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/GemTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/GoldTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Castle/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Castle/Room.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Castle/ThroneRoom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Castle/ThroneRoom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ThroneRoomTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ThroneRoomTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Castle/ThroneRoom.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Castle/ThroneRoom.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/ThroneRoomTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ThroneRoomTest.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -61,32 +64,41 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.WizardTest.testcanAddSpells">
-    <configuration name="BarbarianTest.testCanAddWeapon" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ThroneRoomTest">
+    <configuration name="ThroneRoomTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FantasyLab" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="BarbarianTest" />
-      <option name="METHOD_NAME" value="testCanAddWeapon" />
+      <option name="MAIN_CLASS_NAME" value="ThroneRoomTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ThroneRoomTest.checkCanAddIEenemyToRoom" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FantasyLab" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ThroneRoomTest" />
+      <option name="METHOD_NAME" value="checkCanAddIEenemyToRoom" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DwarfTest.testCanAddWeapon" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ThroneRoomTest.checkCanAddIPlayableToRoom" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FantasyLab" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="DwarfTest" />
-      <option name="METHOD_NAME" value="testCanAddWeapon" />
+      <option name="MAIN_CLASS_NAME" value="ThroneRoomTest" />
+      <option name="METHOD_NAME" value="checkCanAddIPlayableToRoom" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="KnightTest.testCanAddWeapon" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ThroneRoomTest.checkDwarfDoesNotChallengeEnemyWhenRoomIsEmpty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FantasyLab" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="KnightTest" />
-      <option name="METHOD_NAME" value="testCanAddWeapon" />
+      <option name="MAIN_CLASS_NAME" value="ThroneRoomTest" />
+      <option name="METHOD_NAME" value="checkDwarfDoesNotChallengeEnemyWhenRoomIsEmpty" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -102,23 +114,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WizardTest.testcanAddSpells" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="FantasyLab" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="WizardTest" />
-      <option name="METHOD_NAME" value="testcanAddSpells" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.WizardTest.testcanAddSpells" />
+        <item itemvalue="JUnit.ThroneRoomTest" />
+        <item itemvalue="JUnit.ThroneRoomTest.checkDwarfDoesNotChallengeEnemyWhenRoomIsEmpty" />
         <item itemvalue="JUnit.ThroneRoomTest.testOrcAndDwarfAttackUntilOneIsDefeatedIfOrcDefeated" />
-        <item itemvalue="JUnit.KnightTest.testCanAddWeapon" />
-        <item itemvalue="JUnit.BarbarianTest.testCanAddWeapon" />
-        <item itemvalue="JUnit.DwarfTest.testCanAddWeapon" />
+        <item itemvalue="JUnit.ThroneRoomTest.checkCanAddIEenemyToRoom" />
+        <item itemvalue="JUnit.ThroneRoomTest.checkCanAddIPlayableToRoom" />
       </list>
     </recent_temporary>
   </component>

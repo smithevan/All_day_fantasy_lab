@@ -76,13 +76,15 @@ public class ThroneRoomTest {
     }
 
     @Test
-    public void checkDwarfChallengesEnemyWhenEnteringRoomWithEnemy(){
-        throneRoom.addOrc(orc);
-        assertEquals("I challenge thee to mortal battle", throneRoom.addDwarf(dwarf));
+    public void checkCanAddIPlayableToRoom(){
+        throneRoom.addIPlayable(dwarf);
+        assertEquals(1, throneRoom.numberOfPlayers());
     }
+
     @Test
-    public void checkDwarfDoesNotChallengeEnemyWhenRoomIsEmpty(){
-        assertEquals(null, throneRoom.addDwarf(dwarf));
+    public void checkCanAddIEenemyToRoom(){
+        throneRoom.addIEnemy(orc);
+        assertEquals(1, throneRoom.numberOfEnemies());
     }
 
     @Test
@@ -110,8 +112,8 @@ public class ThroneRoomTest {
     @Test
     public void testOrcAndDwarfAttackUntilOneIsDefeatedIfOrcDefeated(){
         dwarf.addWeapon(sword);
-        throneRoom.addOrc(orc);
-        throneRoom.addDwarf(dwarf);
+        throneRoom.addIEnemy(orc);
+        throneRoom.addIPlayable(dwarf);
         throneRoom.battle(dwarf, orc);
         assertEquals(0, orc.getHealth());
     }

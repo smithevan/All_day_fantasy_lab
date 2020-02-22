@@ -27,6 +27,10 @@ public class ThroneRoom extends Room{
         enemies.remove(orc);
     }
 
+    public void addIEnemy(IEnemy enemy) {
+        enemies.add(enemy);
+    }
+
     public void addBarbarian(Barbarian barbarian) {
         players.add(barbarian);
     }
@@ -39,10 +43,14 @@ public class ThroneRoom extends Room{
         players.add(knight);
     }
 
+    public void addIPlayable(IPlayable player) {
+        players.add(player);
+    }
+
     public String addDwarf(Dwarf dwarf) {
         if (enemies.size() > 0) {
             players.add(dwarf);
-            return "I challenge thee to mortal battle";
+            return "I challenge you to mortal battle";
         }else {
             players.add(dwarf);
             return "";
