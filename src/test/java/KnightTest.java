@@ -54,4 +54,18 @@ public class KnightTest {
         assertEquals(1, knight.weaponCount());
     }
 
+    @Test
+    public void testBarbarianCanTakeDamage() {
+        int injury = 20;
+        knight.damage(injury);
+        assertEquals(60, knight.getHealingPoints());
+    }
+
+//    @Test
+//    public void testDwarfCanUseWeapon() {
+//        knight.addSword(sword);
+//        int attackStrength = sword.useWeapons();
+//        assertEquals(20, attackStrength);
+//    }
+
 }

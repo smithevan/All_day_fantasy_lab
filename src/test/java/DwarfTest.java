@@ -14,6 +14,8 @@ public class DwarfTest {
     Sword sword;
     Axe axe;
     Bow bow;
+    Axe axe2;
+    Sword sword2;
 
 
     @Before
@@ -22,6 +24,8 @@ public class DwarfTest {
         sword = new Sword(30);
         axe = new Axe(20);
         bow = new Bow(40);
+        axe2 = new Axe(10);
+        sword2 = new Sword(10);
     }
     @Test
         public void hasName(){
@@ -57,7 +61,27 @@ public class DwarfTest {
     }
 
     @Test
-    public void testCanAttack(){
-        assertEquals(1.00, dwarf.attack(), 0.01);
+    public void testDwarfCanTakeDamage() {
+        int injury = 20;
+        dwarf.takeDamage(injury);
+        assertEquals(30, dwarf.getHealingPoints());
     }
+
+//    @Test
+//    public void testDwarfCanUseWeapon() {
+//        dwarf.addAxe(axe);
+//        int attackStrength = axe.useWeapons();
+//        assertEquals(20, attackStrength);
+//    } Testing if a weapon returns a random integer between 1 and the full strength value
+
+    @Test
+    public void testDwarfCanUseMultipleWeapons(){
+        dwarf.addAxe(axe2);
+        dwarf.addSword(sword2);
+        int attackStrength = dwarf.attack();
+        assertEquals(20, attackStrength);
+    }
+
+
+
 }

@@ -19,5 +19,10 @@ public class AxeTest {
         assertEquals( 50, axe.getStrength());
     }
 
+//    @Test
+//    public void canUseAxe(){
+//        assertEquals(20, axe.useWeapons());
+//    }
+
 
 }

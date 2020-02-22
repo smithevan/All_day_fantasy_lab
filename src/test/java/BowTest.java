@@ -19,4 +19,9 @@ public class BowTest  {
         assertEquals( 50, bow.getStrength());
     }
 
+//    @Test
+//    public void canUseAxe(){
+//        assertEquals(20, bow.useWeapons());
+//    }  Testing that .useWeapon returns a random integer between strength and 1/6 of strength
+
 }

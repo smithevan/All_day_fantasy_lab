@@ -7,7 +7,7 @@ import specialPowers.IWeaponable;
 
 import java.util.ArrayList;
 
-public class Barbarian extends Player implements IWeaponable {
+public class Barbarian extends Player{
     ArrayList<IWeaponable> weapons;
     public Barbarian(String name, int healingPoints){
         super(name, healingPoints);
@@ -27,5 +27,9 @@ public class Barbarian extends Player implements IWeaponable {
 
     public void addBow(Bow bow) {
         weapons.add(bow);
+    }
+
+    public void damage(int injury) {
+        healingPoints -= injury;
     }
 }

@@ -46,4 +46,10 @@ public class ThroneRoom extends Room{
             return null;
         }
     }
+
+    //begin with weapon strength
+    //begin with enemy strength
+    //multiply weapon strength by random number, deduct output from enemy health
+    //multiply enemy strength by random number, deduct output from player health
+    //continue looping until someone is zero.
 }

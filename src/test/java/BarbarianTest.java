@@ -55,4 +55,11 @@ public class BarbarianTest {
         barbarian.addBow(bow);
         assertEquals(1, barbarian.weaponCount());
     }
+
+    @Test
+    public void testBarbarianCanTakeDamage() {
+        int injury = 20;
+        barbarian.damage(injury);
+        assertEquals(40, barbarian.getHealingPoints());
+    }
 }

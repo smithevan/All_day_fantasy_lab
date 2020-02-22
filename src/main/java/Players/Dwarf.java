@@ -7,7 +7,7 @@ import specialPowers.IWeaponable;
 
 import java.util.ArrayList;
 
-public class Dwarf extends Player {
+public class Dwarf extends Player{
     ArrayList<IWeaponable> weapons;
     public Dwarf(String name, int healingPoints) {
         super(name, healingPoints);
@@ -30,13 +30,18 @@ public class Dwarf extends Player {
         weapons.add(bow);
     }
 
-    public double attack() {
-        //begin with weapon strength
-        //begin with enemy strength
-        //multiply weapon strength by random number, deduct output from enemy health
-        //multiply enemy strength by random number, deduct output from player health
-        //continue looping until someone is zero.
-        double randomNumber = Math.random();
-        return randomNumber;
+    public void takeDamage(int injury) {
+        healingPoints -= injury;
+    }
+
+
+    public int attack() {
+        int attackStrength = 0;
+        for (int i = 0; i < weapons.size(); i++){
+            attackStrength +=  weapons.get(i).useWeapons();
+        }
+        return attackStrength;
+
+
     }
 }

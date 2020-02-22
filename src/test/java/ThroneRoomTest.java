@@ -3,6 +3,7 @@ import Castle.ThroneRoom;
 import Players.Barbarian;
 import Players.Dwarf;
 import Players.Knight;
+import Weapons.Sword;
 import enemies.Orc;
 import org.junit.Before;
 import org.junit.Test;
@@ -16,14 +17,16 @@ public class ThroneRoomTest {
     Barbarian barbarian;
     Knight knight;
     Dwarf dwarf;
+    Sword sword;
 
     @Before
     public void before(){
         throneRoom = new ThroneRoom("Throne Room");
-        orc = new Orc("Orc", 30);
+        orc = new Orc("Orc", 10, 40);
         barbarian = new Barbarian("Barbarian", 50);
         knight = new Knight("Knight", 80);
         dwarf = new Dwarf ("Dwarf", 60);
+        sword = new Sword (70);
     }
 
     @Test
@@ -84,9 +87,10 @@ public class ThroneRoomTest {
 
 //    @Test
 //    public void checkDwarfCanAttackOrc(){
+//        dwarf.addSword(sword);
 //        throneRoom.addOrc(orc);
 //        throneRoom.addDwarf(dwarf);
-//        dwarf.attack();
+//
 //        assertEquals();
 //
 //    }

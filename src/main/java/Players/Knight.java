@@ -32,4 +32,7 @@ public class Knight extends Player {
     }
 
 
+    public void damage(int injury) {
+        healingPoints -= injury;
+    }
 }

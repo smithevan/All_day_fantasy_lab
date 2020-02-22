@@ -10,4 +10,7 @@ public interface IWeaponable {
 //    eg. GetName getDamage
 
 //    double attack();
+
+    int useWeapons();
+//    int getStrength();
 }

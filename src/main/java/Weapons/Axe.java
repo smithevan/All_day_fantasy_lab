@@ -7,4 +7,11 @@ public class Axe extends Weapon implements IWeaponable {
         super(strength);
     }
 
+    public int useWeapons() {
+        double dice = Math.random();
+        double hitStrength = strength * dice;
+        return (int) hitStrength;
+    }
+
+
 }
