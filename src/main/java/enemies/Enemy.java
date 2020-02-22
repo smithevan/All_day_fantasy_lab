@@ -1,6 +1,6 @@
 package enemies;
 
-public abstract class Enemy {
+public abstract class Enemy implements IEnemy {
 
     String name;
     int strength;

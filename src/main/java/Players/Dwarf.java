@@ -3,6 +3,7 @@ package Players;
 import Weapons.Axe;
 import Weapons.Bow;
 import Weapons.Sword;
+import enemies.IEnemy;
 import enemies.Orc;
 import specialPowers.IWeaponable;
 
@@ -39,12 +40,13 @@ public class Dwarf extends Player implements IPlayable{
     }
 
 
-    public String attack(Orc orc) {
-        int attackStrength = 0;
+    public int attack(IEnemy enemy) {
+        int hitStrength = 0;
         for (int i = 0; i < weapons.size(); i++){
-            attackStrength +=  weapons.get(i).useWeapons();
+            hitStrength +=  weapons.get(i).useWeapons();
         }
-        orc.damage(attackStrength);
-        return "The Orc has been attacked with " + attackStrength + " Health: " + orc.getHealth();
+        enemy.damage(hitStrength);
+        System.out.println("The Dwarf Has Attacked with " + hitStrength + ", enemy now at " + enemy.getHealth());
+        return hitStrength;
     }
 }

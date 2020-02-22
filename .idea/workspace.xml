@@ -3,22 +3,22 @@
   <component name="ChangeListManager">
     <list default="true" id="4d4672b0-1463-4e79-9ca1-c8bf0d1ec73e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Castle/ThroneRoom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Castle/ThroneRoom.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Players/Barbarian.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Players/Barbarian.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Players/Dwarf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Players/Dwarf.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Players/IPlayable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Players/IPlayable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Players/Knight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Players/Knight.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/enemies/Enemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/enemies/Enemy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/enemies/Orc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/enemies/Orc.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/BarbarianTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BarbarianTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/DwarfTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/DwarfTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/KnightTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/KnightTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/OrcTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/OrcTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ThroneRoomTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ThroneRoomTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Castle/ThroneRoom.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Castle/ThroneRoom.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Players/Barbarian.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Players/Barbarian.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Players/Dwarf.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Players/Dwarf.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Players/IPlayable.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Players/IPlayable.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Players/Knight.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Players/Knight.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/enemies/Enemy.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/enemies/Enemy.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/enemies/Orc.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/enemies/Orc.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/BarbarianTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/BarbarianTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/DwarfTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/DwarfTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/KnightTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/KnightTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/OrcTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/OrcTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/ThroneRoomTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ThroneRoomTest.class" afterDir="false" />
     </list>
@@ -71,26 +71,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ThroneRoomTest.testOrcCanAttackDwarf">
-    <configuration name="DwarfTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="FantasyLab" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="DwarfTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DwarfTest.testDwarfCanTakeDamage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="FantasyLab" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="DwarfTest" />
-      <option name="METHOD_NAME" value="testDwarfCanTakeDamage" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.ThroneRoomTest.testOrcAndDwarfAttackUntilOneIsDefeatedIfOrcDefeated">
     <configuration name="OrcTest.testOrcCanAttack" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FantasyLab" />
       <option name="PACKAGE_NAME" value="" />
@@ -101,11 +82,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OrcTest.testOrcDoesNotDieUnlessHealthBecomesZero" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="OrcTest.testOrcCanDie" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FantasyLab" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="OrcTest" />
-      <option name="METHOD_NAME" value="testOrcDoesNotDieUnlessHealthBecomesZero" />
+      <option name="METHOD_NAME" value="testOrcCanDie" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ThroneRoomTest.checkDwarfCanAttackOrc" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FantasyLab" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ThroneRoomTest" />
+      <option name="METHOD_NAME" value="checkDwarfCanAttackOrc" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ThroneRoomTest.testOrcAndDwarfAttackUntilOneIsDefeatedIfOrcDefeated" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FantasyLab" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ThroneRoomTest" />
+      <option name="METHOD_NAME" value="testOrcAndDwarfAttackUntilOneIsDefeatedIfOrcDefeated" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -123,11 +124,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ThroneRoomTest.testOrcAndDwarfAttackUntilOneIsDefeatedIfOrcDefeated" />
+        <item itemvalue="JUnit.ThroneRoomTest.checkDwarfCanAttackOrc" />
+        <item itemvalue="JUnit.OrcTest.testOrcCanDie" />
         <item itemvalue="JUnit.ThroneRoomTest.testOrcCanAttackDwarf" />
         <item itemvalue="JUnit.OrcTest.testOrcCanAttack" />
-        <item itemvalue="JUnit.OrcTest.testOrcDoesNotDieUnlessHealthBecomesZero" />
-        <item itemvalue="JUnit.DwarfTest.testDwarfCanTakeDamage" />
-        <item itemvalue="JUnit.DwarfTest" />
       </list>
     </recent_temporary>
   </component>

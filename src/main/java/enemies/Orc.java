@@ -13,23 +13,23 @@ public class Orc extends Enemy{
     }
 
 
-    public String damage(int injury) {
+    public int damage(int injury) {
         health -= injury;
         if (health <= 0){
             health = 0;
-            return "The Orc Has Been Defeated";
+            return health;
         } else {
-            return "";
+            return health;
         }
     }
 
 
-    public String attack(IPlayable iPlayable) {
+    public int attack(IPlayable iPlayable) {
         double dice = Math.random();
         int hitStrength = (int) (strength * dice);
 
         iPlayable.takeDamage(hitStrength);
-        return "The Orc has Attacked";
-
+        System.out.println("The Orc Has Attacked with " + hitStrength + ", player now at " + iPlayable.getHealingPoints());
+        return hitStrength;
     }
 }

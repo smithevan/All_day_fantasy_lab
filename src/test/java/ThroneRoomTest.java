@@ -90,7 +90,10 @@ public class ThroneRoomTest {
         dwarf.addSword(sword);
         throneRoom.addOrc(orc);
         throneRoom.addDwarf(dwarf);
-        assertEquals("The Orc Has Been Attacked", dwarf.attack(orc));
+        int initialHealth = orc.getHealth();
+        int loss = dwarf.attack(orc);
+        int battleLoss = orc.getHealth() + loss;
+        assertEquals(initialHealth, battleLoss);
     }
 
     @Test
@@ -98,8 +101,21 @@ public class ThroneRoomTest {
         dwarf.addSword(sword);
         throneRoom.addOrc(orc);
         throneRoom.addDwarf(dwarf);
-        assertEquals("The Orc has Attacked", orc.attack(dwarf));
+        int initialHealingPoints = dwarf.getHealingPoints();
+        int loss = orc.attack(dwarf);
+        int battleLoss = dwarf.getHealingPoints() + loss;
+        assertEquals(initialHealingPoints, battleLoss);
     }
+
+    @Test
+    public void testOrcAndDwarfAttackUntilOneIsDefeatedIfOrcDefeated(){
+        dwarf.addSword(sword);
+        throneRoom.addOrc(orc);
+        throneRoom.addDwarf(dwarf);
+        throneRoom.battle(dwarf, orc);
+        assertEquals(0, orc.getHealth());
+    }
+
 
 
 }

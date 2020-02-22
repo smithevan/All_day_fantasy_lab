@@ -2,7 +2,9 @@ package Castle;
 
 import Players.Barbarian;
 import Players.Dwarf;
+import Players.IPlayable;
 import Players.Knight;
+import enemies.IEnemy;
 import enemies.Orc;
 
 public class ThroneRoom extends Room{
@@ -43,13 +45,30 @@ public class ThroneRoom extends Room{
             return "I challenge thee to mortal battle";
         }else {
             players.add(dwarf);
-            return null;
+            return "";
         }
     }
+
+    public void battle(IPlayable player, IEnemy enemy) {
+        while (enemy.getHealth() != 0  && player.getHealingPoints() != 0) {
+                if (player.getHealingPoints() != 0) {
+                    player.attack(enemy);
+                }
+                if (enemy.getHealth() != 0) {
+                    enemy.attack(player);
+                }
+            }
+            if (player.getHealingPoints() == 0){
+                System.out.println("Player Defeated");
+            } else if (enemy.getHealth() == 0) {
+                System.out.println("The Enemy Has Been Defeated");
+            }
+        }
+}
 
     //begin with weapon strength
     //begin with enemy strength
     //multiply weapon strength by random number, deduct output from enemy health
     //multiply enemy strength by random number, deduct output from player health
     //continue looping until someone is zero.
-}
+

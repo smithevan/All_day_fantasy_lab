@@ -44,14 +44,10 @@ public class OrcTest {
     @Test
     public void testOrcCanDie(){
         int injury = 40;
-        assertEquals("The Orc Has Been Defeated", orc.damage(injury));
+        assertEquals(0, orc.damage(injury));
     }
 
-    @Test
-    public void testOrcDoesNotDieUnlessHealthBecomesZero(){
-        int injury = 40;
-        assertEquals("The Orc Has Been Defeated", orc.damage(injury));
-    }
+
 
 
 

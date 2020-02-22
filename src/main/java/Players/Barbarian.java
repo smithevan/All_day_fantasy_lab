@@ -3,6 +3,7 @@ package Players;
 import Weapons.Axe;
 import Weapons.Bow;
 import Weapons.Sword;
+import enemies.IEnemy;
 import specialPowers.IWeaponable;
 
 import java.util.ArrayList;
@@ -33,11 +34,13 @@ public class Barbarian extends Player implements IPlayable{
         healingPoints -= injury;
     }
 
-    public int attack() {
-        int attackStrength = 0;
+    public int attack(IEnemy enemy) {
+        int hitStrength = 0;
         for (int i = 0; i < weapons.size(); i++){
-            attackStrength +=  weapons.get(i).useWeapons();
+            hitStrength +=  weapons.get(i).useWeapons();
         }
-        return attackStrength;
+        enemy.damage(hitStrength);
+        System.out.print("The Dwarf Has Attacked");
+        return hitStrength;
     }
 }
