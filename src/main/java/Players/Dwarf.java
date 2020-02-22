@@ -32,6 +32,10 @@ public class Dwarf extends Player implements IPlayable{
         weapons.add(bow);
     }
 
+    public void addWeapon(IWeaponable weapon) {
+        weapons.add(weapon);
+    }
+
     public void takeDamage(int injury) {
         healingPoints -= injury;
         if (healingPoints <= 0){

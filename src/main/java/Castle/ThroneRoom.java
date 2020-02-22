@@ -59,7 +59,7 @@ public class ThroneRoom extends Room{
                 }
             }
             if (player.getHealingPoints() == 0){
-                System.out.println("Player Defeated");
+                System.out.println("The Player Has Been Defeated");
             } else if (enemy.getHealth() == 0) {
                 System.out.println("The Enemy Has Been Defeated");
             }

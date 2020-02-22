@@ -87,7 +87,7 @@ public class ThroneRoomTest {
 
     @Test
     public void checkDwarfCanAttackOrc(){
-        dwarf.addSword(sword);
+        dwarf.addWeapon(sword);
         throneRoom.addOrc(orc);
         throneRoom.addDwarf(dwarf);
         int initialHealth = orc.getHealth();
@@ -98,7 +98,7 @@ public class ThroneRoomTest {
 
     @Test
     public void testOrcCanAttackDwarf(){
-        dwarf.addSword(sword);
+        dwarf.addWeapon(sword);
         throneRoom.addOrc(orc);
         throneRoom.addDwarf(dwarf);
         int initialHealingPoints = dwarf.getHealingPoints();
@@ -109,7 +109,7 @@ public class ThroneRoomTest {
 
     @Test
     public void testOrcAndDwarfAttackUntilOneIsDefeatedIfOrcDefeated(){
-        dwarf.addSword(sword);
+        dwarf.addWeapon(sword);
         throneRoom.addOrc(orc);
         throneRoom.addDwarf(dwarf);
         throneRoom.battle(dwarf, orc);

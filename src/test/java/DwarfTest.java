@@ -47,7 +47,7 @@ public class DwarfTest {
     }
     @Test
     public void testCanAddSword(){
-        dwarf.addSword(sword);
+        dwarf.addWeapon(sword);
         assertEquals(1, dwarf.weaponCount() );
     }
 
@@ -60,6 +60,12 @@ public class DwarfTest {
     @Test
     public void testCanAddBow(){
         dwarf.addBow(bow);
+        assertEquals(1, dwarf.weaponCount());
+    }
+
+    @Test
+    public void testCanAddWeapon(){
+        dwarf.addWeapon(sword);
         assertEquals(1, dwarf.weaponCount());
     }
 

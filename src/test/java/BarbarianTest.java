@@ -62,4 +62,10 @@ public class BarbarianTest {
         barbarian.takeDamage(injury);
         assertEquals(40, barbarian.getHealingPoints());
     }
+
+    @Test
+    public void testCanAddWeapon(){
+        barbarian.addWeapon(sword);
+        assertEquals(1, barbarian.weaponCount());
+    }
 }
