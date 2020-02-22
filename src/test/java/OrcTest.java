@@ -1,3 +1,4 @@
+import Players.Dwarf;
 import Players.Knight;
 import Weapons.Axe;
 import Weapons.Bow;
@@ -11,10 +12,12 @@ import static org.junit.Assert.assertEquals;
 public class OrcTest {
 
     Orc orc;
+    Dwarf dwarf;
 
     @Before
     public void before(){
         orc = new Orc("OrcName", 10, 40);
+        dwarf = new Dwarf ("Dwarf", 40);
     }
     @Test
     public void hasName(){
@@ -39,8 +42,17 @@ public class OrcTest {
     }
 
     @Test
-    public void testOrcCanAttack(){
-        assertEquals(20, orc.attack());
+    public void testOrcCanDie(){
+        int injury = 40;
+        assertEquals("The Orc Has Been Defeated", orc.damage(injury));
     }
+
+    @Test
+    public void testOrcDoesNotDieUnlessHealthBecomesZero(){
+        int injury = 40;
+        assertEquals("The Orc Has Been Defeated", orc.damage(injury));
+    }
+
+
 
 }

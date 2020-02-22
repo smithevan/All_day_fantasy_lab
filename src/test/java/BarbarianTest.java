@@ -59,7 +59,7 @@ public class BarbarianTest {
     @Test
     public void testBarbarianCanTakeDamage() {
         int injury = 20;
-        barbarian.damage(injury);
+        barbarian.takeDamage(injury);
         assertEquals(40, barbarian.getHealingPoints());
     }
 }

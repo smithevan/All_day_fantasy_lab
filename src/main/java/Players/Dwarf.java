@@ -3,11 +3,12 @@ package Players;
 import Weapons.Axe;
 import Weapons.Bow;
 import Weapons.Sword;
+import enemies.Orc;
 import specialPowers.IWeaponable;
 
 import java.util.ArrayList;
 
-public class Dwarf extends Player{
+public class Dwarf extends Player implements IPlayable{
     ArrayList<IWeaponable> weapons;
     public Dwarf(String name, int healingPoints) {
         super(name, healingPoints);
@@ -32,16 +33,18 @@ public class Dwarf extends Player{
 
     public void takeDamage(int injury) {
         healingPoints -= injury;
+        if (healingPoints <= 0){
+            healingPoints = 0;
+        }
     }
 
 
-    public int attack() {
+    public String attack(Orc orc) {
         int attackStrength = 0;
         for (int i = 0; i < weapons.size(); i++){
             attackStrength +=  weapons.get(i).useWeapons();
         }
-        return attackStrength;
-
-
+        orc.damage(attackStrength);
+        return "The Orc has been attacked with " + attackStrength + " Health: " + orc.getHealth();
     }
 }

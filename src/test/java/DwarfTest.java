@@ -2,6 +2,7 @@ import Players.Dwarf;
 import Weapons.Axe;
 import Weapons.Bow;
 import Weapons.Sword;
+import enemies.Orc;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -16,6 +17,7 @@ public class DwarfTest {
     Bow bow;
     Axe axe2;
     Sword sword2;
+    Orc orc;
 
 
     @Before
@@ -26,6 +28,7 @@ public class DwarfTest {
         bow = new Bow(40);
         axe2 = new Axe(10);
         sword2 = new Sword(10);
+        orc = new Orc("Orc", 10, 10);
     }
     @Test
         public void hasName(){
@@ -68,19 +71,16 @@ public class DwarfTest {
     }
 
 //    @Test
-//    public void testDwarfCanUseWeapon() {
+//    public testDwarfCanUseWeapon() {
 //        dwarf.addAxe(axe);
 //        int attackStrength = axe.useWeapons();
 //        assertEquals(20, attackStrength);
 //    } Testing if a weapon returns a random integer between 1 and the full strength value
 
-    @Test
-    public void testDwarfCanUseMultipleWeapons(){
-        dwarf.addAxe(axe2);
-        dwarf.addSword(sword2);
-        int attackStrength = dwarf.attack();
-        assertEquals(20, attackStrength);
-    }
+//    @Test
+//    public void testDwarfCanUseMultipleWeapons(){
+//
+//    }
 
 
 

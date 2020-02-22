@@ -57,7 +57,7 @@ public class KnightTest {
     @Test
     public void testBarbarianCanTakeDamage() {
         int injury = 20;
-        knight.damage(injury);
+        knight.takeDamage(injury);
         assertEquals(60, knight.getHealingPoints());
     }
 

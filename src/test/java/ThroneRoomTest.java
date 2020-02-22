@@ -26,7 +26,7 @@ public class ThroneRoomTest {
         barbarian = new Barbarian("Barbarian", 50);
         knight = new Knight("Knight", 80);
         dwarf = new Dwarf ("Dwarf", 60);
-        sword = new Sword (70);
+        sword = new Sword (20);
     }
 
     @Test
@@ -85,14 +85,21 @@ public class ThroneRoomTest {
         assertEquals(null, throneRoom.addDwarf(dwarf));
     }
 
-//    @Test
-//    public void checkDwarfCanAttackOrc(){
-//        dwarf.addSword(sword);
-//        throneRoom.addOrc(orc);
-//        throneRoom.addDwarf(dwarf);
-//
-//        assertEquals();
-//
-//    }
+    @Test
+    public void checkDwarfCanAttackOrc(){
+        dwarf.addSword(sword);
+        throneRoom.addOrc(orc);
+        throneRoom.addDwarf(dwarf);
+        assertEquals("The Orc Has Been Attacked", dwarf.attack(orc));
+    }
+
+    @Test
+    public void testOrcCanAttackDwarf(){
+        dwarf.addSword(sword);
+        throneRoom.addOrc(orc);
+        throneRoom.addDwarf(dwarf);
+        assertEquals("The Orc has Attacked", orc.attack(dwarf));
+    }
+
 
 }
