@@ -29,6 +29,10 @@ public abstract class Player {
 
     public void addTreasure(ITreasurable treasure) { treasures.add(treasure);}
 
+    public void addHealth(int healing) {
+        healingPoints += healing;
+    }
+
 
 
 

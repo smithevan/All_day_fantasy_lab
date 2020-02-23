@@ -4,7 +4,7 @@ import specialPowers.IHealable;
 
 public class Potion extends HealingTool implements IHealable {
 
-    public Potion(int strength){
-        super(strength);
+    public Potion(String name, int strength){
+        super(name, strength);
     }
 }

@@ -4,8 +4,8 @@ import specialPowers.IHealable;
 
 public class Herbs extends HealingTool implements IHealable {
 
-    public Herbs(int strength){
-        super(strength);
+    public Herbs(String name, int strength){
+        super(name, strength);
     }
 
 }

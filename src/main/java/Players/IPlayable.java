@@ -10,4 +10,5 @@ public interface IPlayable{
     int attack(IEnemy enemy);
     String getName();
     void addTreasure(ITreasurable treasure);
+    void addHealth(int healing);
 }

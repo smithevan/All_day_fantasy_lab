@@ -1,9 +1,6 @@
 import Castle.Dungeon;
 import Castle.ThroneRoom;
-import Players.Barbarian;
-import Players.Dwarf;
-import Players.Knight;
-import Players.Wizard;
+import Players.*;
 import Spells.Lightening;
 import Weapons.Sword;
 import enemies.Orc;
@@ -27,6 +24,7 @@ public class ThroneRoomTest {
     private Wizard wizard;
     private Lightening lightening;
     private Dragon dragon;
+    private Warlock warlock;
 
     @Before
     public void before(){
@@ -40,7 +38,8 @@ public class ThroneRoomTest {
         lightening = new Lightening(120, "Lightening");
         sword = new Sword (20);
         gold = new Gold (20, "Gold");
-        dragon = new Dragon(200, "Drogon", 100);
+        dragon = new Dragon(200, "Dragon", 100);
+        warlock = new Warlock ("Warlock", 80);
     }
 
     @Test
@@ -195,6 +194,15 @@ public class ThroneRoomTest {
         throneRoom.addIPlayable(wizard);
         throneRoom.battle(wizard, orc2);
         assertEquals(0, throneRoom.numberOfEnemies());
+    }
+
+    @Test
+    public void testOrcAndWarlockCanAttackWithSpellsUntilOneIsDefeatedWithStrongOrc(){
+        warlock.addSpell(lightening);
+        throneRoom.addIEnemy(orc);
+        throneRoom.addIPlayable(warlock);
+        throneRoom.battle(warlock, orc);
+        assertEquals(0, orc.getHealth());
     }
 
 

@@ -63,6 +63,7 @@ public class Wizard extends Player implements IPlayable{
             if (countCreatures() > 0 ){
                 for (int j = 0; j < countCreatures(); j++){
                     hitStrength += creatures.get(j).attack();
+                    System.out.println("The " + creatures.get(j).getName() + " has attacked.");
                 }
             }
 
