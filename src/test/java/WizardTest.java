@@ -96,12 +96,17 @@ public class WizardTest {
     @Test
     public void testWizardCanAddCreature(){
         wizard.addICreaturable(dragon);
+        assertEquals(1, wizard.countCreatures());
     }
 
     @Test
     public void testWizardCanRemoveCreature(){
+        wizard.addICreaturable(dragon);
         wizard.removeIcreature(dragon);
+        assertEquals(0, wizard.countCreatures());
     }
+
+
 
 
 

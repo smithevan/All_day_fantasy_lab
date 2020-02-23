@@ -8,10 +8,6 @@ public class Lightening extends Spell implements ISpellable {
         super(strength, name);
     }
 
-    public int castSpell() {
-        double dice = Math.random();
-        double hitStrength = strength * dice;
-        return (int) hitStrength;
-    }
+
 
 }

@@ -7,6 +7,7 @@ import Players.Wizard;
 import Spells.Lightening;
 import Weapons.Sword;
 import enemies.Orc;
+import mythicalcreatures.Dragon;
 import org.junit.Before;
 import org.junit.Test;
 import treasure.Gold;
@@ -15,22 +16,23 @@ import static org.junit.Assert.assertEquals;
 
 public class ThroneRoomTest {
 
-    ThroneRoom throneRoom;
-    Orc orc;
-    Orc orc2;
-    Barbarian barbarian;
-    Knight knight;
-    Dwarf dwarf;
-    Sword sword;
-    Gold gold;
-    Wizard wizard;
-    Lightening lightening;
+    private ThroneRoom throneRoom;
+    private Orc orc;
+    private Orc orc2;
+    private Barbarian barbarian;
+    private Knight knight;
+    private Dwarf dwarf;
+    private Sword sword;
+    private Gold gold;
+    private Wizard wizard;
+    private Lightening lightening;
+    private Dragon dragon;
 
     @Before
     public void before(){
         throneRoom = new ThroneRoom("Throne Room");
         orc = new Orc("Orc", 10, 40);
-        orc2 = new Orc("Orc2", 120, 300);
+        orc2 = new Orc("Orc", 120, 300);
         barbarian = new Barbarian("Barbarian", 50);
         knight = new Knight("Knight", 80);
         wizard = new Wizard("Gandalf", 80);
@@ -38,6 +40,7 @@ public class ThroneRoomTest {
         lightening = new Lightening(120, "Lightening");
         sword = new Sword (20);
         gold = new Gold (20, "Gold");
+        dragon = new Dragon(200, "Drogon", 100);
     }
 
     @Test
@@ -165,6 +168,16 @@ public class ThroneRoomTest {
         assertEquals(0, orc.getHealth());
     }
 
+
+    @Test
+    public void testOrcAndWizardCanAttackWithSpellsUntilOneIsDefeatedWithStrongOrc(){
+        wizard.addSpell(lightening);
+        throneRoom.addIEnemy(orc2);
+        throneRoom.addIPlayable(wizard);
+        throneRoom.battle(wizard, orc2);
+        assertEquals(0, wizard.getHealingPoints());
+    }
+
     @Test
     public void testWizardCanPickUpAndAddTreasureFromRoom(){
         throneRoom.addTreasure(gold);
@@ -172,6 +185,16 @@ public class ThroneRoomTest {
         throneRoom.collectTreasure(wizard);
         assertEquals(0, throneRoom.getTreasure());
         assertEquals(1, wizard.countTreasure());
+    }
+
+    @Test
+    public void testWizardCanUseCreatureToDefend(){
+        wizard.addSpell(lightening);
+        wizard.addICreaturable(dragon);
+        throneRoom.addIEnemy(orc2);
+        throneRoom.addIPlayable(wizard);
+        throneRoom.battle(wizard, orc2);
+        assertEquals(0, throneRoom.numberOfEnemies());
     }
 
 

@@ -10,6 +10,12 @@ public abstract class Spell {
         this.name = name;
     }
 
+    public int castSpell() {
+        double dice = Math.random();
+        double hitStrength = strength * dice;
+        return (int) hitStrength;
+    }
+
     public int getStrength(){
         return this.strength;
     }

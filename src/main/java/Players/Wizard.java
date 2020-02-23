@@ -60,6 +60,12 @@ public class Wizard extends Player implements IPlayable{
         int nextSpellIndex = 0;
         for (int i = 0; i < spells.size(); i++){
             hitStrength +=  spells.get(i).castSpell();
+            if (countCreatures() > 0 ){
+                for (int j = 0; j < countCreatures(); j++){
+                    hitStrength += creatures.get(j).attack();
+                }
+            }
+
             spellIndex = i;
             nextSpellIndex += i; // for logging second spell if there is one
         }

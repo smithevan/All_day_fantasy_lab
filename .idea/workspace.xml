@@ -4,14 +4,20 @@
     <list default="true" id="4d4672b0-1463-4e79-9ca1-c8bf0d1ec73e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Players/Wizard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Players/Wizard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mythicalcreatures/Creature.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mythicalcreatures/Creature.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mythicalcreatures/Dragon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mythicalcreatures/Dragon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mythicalcreatures/Ogre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mythicalcreatures/Ogre.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Spells/Fireball.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Spells/Fireball.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Spells/Lightening.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Spells/Lightening.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Spells/Spell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Spells/Spell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/specialPowers/ICreaturable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/specialPowers/ICreaturable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ThroneRoomTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ThroneRoomTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/WizardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/WizardTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Players/Wizard.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Players/Wizard.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mythicalcreatures/Creatures.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Spells/Fireball.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Spells/Fireball.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Spells/Lightening.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Spells/Lightening.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Spells/Spell.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Spells/Spell.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mythicalcreatures/Creature.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mythicalcreatures/Creature.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/mythicalcreatures/Dragon.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mythicalcreatures/Dragon.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/mythicalcreatures/Ogre.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mythicalcreatures/Ogre.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/ThroneRoomTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ThroneRoomTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/WizardTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/WizardTest.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -63,12 +69,23 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.WizardTest.testWizardCanAddCreature">
-    <configuration name="BarbarianTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ThroneRoomTest.testWizardCanUseCreatureToDefend">
+    <configuration name="ThroneRoomTest.testOrcAndWizardCanAttackWithSpellsUntilOneIsDefeated" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FantasyLab" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="BarbarianTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="ThroneRoomTest" />
+      <option name="METHOD_NAME" value="testOrcAndWizardCanAttackWithSpellsUntilOneIsDefeated" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ThroneRoomTest.testOrcAndWizardCanAttackWithSpellsUntilOneIsDefeatedWithStrongOrc" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FantasyLab" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ThroneRoomTest" />
+      <option name="METHOD_NAME" value="testOrcAndWizardCanAttackWithSpellsUntilOneIsDefeatedWithStrongOrc" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -83,31 +100,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WizardTest.testWizardCanAddCreature" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ThroneRoomTest.testWizardCanUseCreatureToDefend" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FantasyLab" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="WizardTest" />
-      <option name="METHOD_NAME" value="testWizardCanAddCreature" />
+      <option name="MAIN_CLASS_NAME" value="ThroneRoomTest" />
+      <option name="METHOD_NAME" value="testWizardCanUseCreatureToDefend" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WizardTest.testWizardCanAddTreasure" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="WizardTest.testWizardCanRemoveCreature" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FantasyLab" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="WizardTest" />
-      <option name="METHOD_NAME" value="testWizardCanAddTreasure" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="WizardTest.testWizardCreaturesBeginsEmpty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="FantasyLab" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="WizardTest" />
-      <option name="METHOD_NAME" value="testWizardCreaturesBeginsEmpty" />
+      <option name="METHOD_NAME" value="testWizardCanRemoveCreature" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -115,11 +122,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.WizardTest.testWizardCanAddCreature" />
-        <item itemvalue="JUnit.WizardTest.testWizardCreaturesBeginsEmpty" />
-        <item itemvalue="JUnit.BarbarianTest" />
+        <item itemvalue="JUnit.ThroneRoomTest.testWizardCanUseCreatureToDefend" />
+        <item itemvalue="JUnit.ThroneRoomTest.testOrcAndWizardCanAttackWithSpellsUntilOneIsDefeated" />
+        <item itemvalue="JUnit.ThroneRoomTest.testOrcAndWizardCanAttackWithSpellsUntilOneIsDefeatedWithStrongOrc" />
         <item itemvalue="JUnit.ThroneRoomTest.testWizardCanPickUpAndAddTreasureFromRoom" />
-        <item itemvalue="JUnit.WizardTest.testWizardCanAddTreasure" />
+        <item itemvalue="JUnit.WizardTest.testWizardCanRemoveCreature" />
       </list>
     </recent_temporary>
   </component>
