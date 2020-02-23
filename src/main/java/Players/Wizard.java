@@ -6,6 +6,8 @@ import Weapons.Axe;
 import Weapons.Bow;
 import Weapons.Sword;
 import enemies.IEnemy;
+import mythicalcreatures.Dragon;
+import specialPowers.ICreaturable;
 import specialPowers.ISpellable;
 import treasure.ITreasurable;
 
@@ -14,9 +16,11 @@ import java.util.ArrayList;
 public class Wizard extends Player implements IPlayable{
 
     ArrayList<ISpellable> spells;
+    ArrayList<ICreaturable> creatures;
     public Wizard(String name, int healingPoints){
         super(name, healingPoints);
         this.spells = new ArrayList<ISpellable>();
+        this.creatures = new ArrayList<ICreaturable>();
     }
 
 
@@ -37,6 +41,10 @@ public class Wizard extends Player implements IPlayable{
 
     public void removeSpell(ISpellable spell) {
         spells.remove(spell);
+    }
+
+    public int countCreatures(){
+        return creatures.size();
     }
 
     public void takeDamage(int injury) {
@@ -62,5 +70,12 @@ public class Wizard extends Player implements IPlayable{
     }
 
 
+    public void addICreaturable(ICreaturable creature) {
+        creatures.add(creature);
+    }
 
+    public void removeIcreature(ICreaturable creature) {
+        creatures.remove(creature);
+
+    }
 }

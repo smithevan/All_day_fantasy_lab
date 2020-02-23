@@ -5,6 +5,7 @@ import Spells.Lightening;
 import Weapons.Axe;
 import Weapons.Bow;
 import Weapons.Sword;
+import mythicalcreatures.Dragon;
 import org.junit.Before;
 import org.junit.Test;
 import treasure.Gold;
@@ -13,10 +14,11 @@ import static org.junit.Assert.assertEquals;
 
 public class WizardTest {
 
-    Wizard wizard;
-    Fireball fireball;
-    Lightening lightening;
-    Gold gold;
+    private Wizard wizard;
+    private Fireball fireball;
+    private Lightening lightening;
+    private Gold gold;
+    private Dragon dragon;
 
 
     @Before
@@ -25,6 +27,7 @@ public class WizardTest {
         fireball = new Fireball(80, "Fireball");
         lightening = new Lightening(70, "Lightening");
         gold = new Gold (20, "Gold");
+        dragon = new Dragon(100, "Drogon", 30);
     }
     @Test
     public void hasName(){
@@ -83,6 +86,21 @@ public class WizardTest {
     public void testWizardCanAddTreasure(){
         wizard.addTreasure(gold);
         assertEquals(1, wizard.countTreasure());
+    }
+
+    @Test
+    public void testWizardCreaturesBeginsEmpty(){
+        assertEquals(0, wizard.countCreatures());
+    }
+
+    @Test
+    public void testWizardCanAddCreature(){
+        wizard.addICreaturable(dragon);
+    }
+
+    @Test
+    public void testWizardCanRemoveCreature(){
+        wizard.removeIcreature(dragon);
     }
 
 

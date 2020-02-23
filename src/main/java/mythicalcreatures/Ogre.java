@@ -4,8 +4,8 @@ import specialPowers.ICreaturable;
 
 public class Ogre extends Creature implements ICreaturable {
 
-    public Ogre(int strength, String name){
-        super(strength, name);
+    public Ogre(int strength, String name, int health){
+        super(strength, name, health);
     }
 
     public int attack() {

@@ -4,8 +4,8 @@ import specialPowers.ICreaturable;
 
 public class Dragon extends Creature implements ICreaturable {
 
-    public Dragon(int strength, String name){
-        super(strength, name);
+    public Dragon(int strength, String name, int health){
+        super(strength, name, health);
     }
 
     public int attack() {

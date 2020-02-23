@@ -4,9 +4,11 @@ public abstract class Creature {
 
     int strength;
     String name;
+    int health;
 
-    public Creature(int strength, String name){
+    public Creature(int strength, String name, int health){
         this.strength = strength;
+        this.health = health;
         this.name = name;
     }
 
@@ -15,5 +17,7 @@ public abstract class Creature {
     }
 
     public String getName() {return this.name; }
+
+    public int getHealth() { return this.health; }
 
 }
