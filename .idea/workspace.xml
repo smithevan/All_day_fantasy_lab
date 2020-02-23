@@ -2,26 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4d4672b0-1463-4e79-9ca1-c8bf0d1ec73e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/ClericTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/PotionTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/HealingTools/HealingTool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HealingTools/HealingTool.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/HealingTools/Herbs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HealingTools/Herbs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/HealingTools/Potion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HealingTools/Potion.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Players/Cleric.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Players/Cleric.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Players/IPlayable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Players/IPlayable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Players/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Players/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Players/Warlock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Players/Warlock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Players/Wizard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Players/Wizard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/specialPowers/IHealable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/specialPowers/IHealable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ClericTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ClericTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ThroneRoomTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ThroneRoomTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/HealingTools/HealingTool.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/HealingTools/HealingTool.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/HealingTools/Herbs.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/HealingTools/Herbs.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/HealingTools/Potion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/HealingTools/Potion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Players/Cleric.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Players/Cleric.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Players/Warlock.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Players/Warlock.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Players/Wizard.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Players/Wizard.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/ThroneRoomTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ThroneRoomTest.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -72,7 +55,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ClericTest.testClericCanHealOthers">
+  <component name="RunManager" selected="JUnit.ThroneRoomTest.testClericCanHealDwarfAfterBattle">
     <configuration name="ClericTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FantasyLab" />
       <option name="PACKAGE_NAME" value="" />
@@ -102,21 +85,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ThroneRoomTest.testOrcAndWarlockCanAttackWithSpellsUntilOneIsDefeatedWithStrongOrc" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ThroneRoomTest.testClericCanHealDwarfAfterBattle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FantasyLab" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ThroneRoomTest" />
-      <option name="METHOD_NAME" value="testOrcAndWarlockCanAttackWithSpellsUntilOneIsDefeatedWithStrongOrc" />
+      <option name="METHOD_NAME" value="testClericCanHealDwarfAfterBattle" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ThroneRoomTest.testWizardCanUseCreatureToDefend" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ThroneRoomTest.testTwoPlayersCanEnterRoomWithOneEnemy" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FantasyLab" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ThroneRoomTest" />
-      <option name="METHOD_NAME" value="testWizardCanUseCreatureToDefend" />
+      <option name="METHOD_NAME" value="testTwoPlayersCanEnterRoomWithOneEnemy" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -124,11 +107,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ThroneRoomTest.testClericCanHealDwarfAfterBattle" />
+        <item itemvalue="JUnit.ThroneRoomTest.testTwoPlayersCanEnterRoomWithOneEnemy" />
         <item itemvalue="JUnit.ClericTest.testClericCanHealOthers" />
         <item itemvalue="JUnit.PotionTest.hasValue" />
         <item itemvalue="JUnit.ClericTest" />
-        <item itemvalue="JUnit.ThroneRoomTest.testOrcAndWarlockCanAttackWithSpellsUntilOneIsDefeatedWithStrongOrc" />
-        <item itemvalue="JUnit.ThroneRoomTest.testWizardCanUseCreatureToDefend" />
       </list>
     </recent_temporary>
   </component>

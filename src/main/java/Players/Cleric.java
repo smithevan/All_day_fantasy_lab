@@ -9,7 +9,7 @@ import specialPowers.IWeaponable;
 
 import java.util.ArrayList;
 
-public class Cleric extends Player{
+public class Cleric extends Player implements IPlayable{
 
     ArrayList<IHealable> healables;
     public Cleric(String name, int healingPoints) {
@@ -34,6 +34,10 @@ public class Cleric extends Player{
         if (healingPoints <= 0){
             healingPoints = 0;
         }
+    }
+
+    public int attack(IEnemy enemy){
+        return 0;
     }
 
 

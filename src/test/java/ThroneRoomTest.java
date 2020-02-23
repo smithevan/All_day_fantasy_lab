@@ -1,5 +1,6 @@
 import Castle.Dungeon;
 import Castle.ThroneRoom;
+import HealingTools.Potion;
 import Players.*;
 import Spells.Lightening;
 import Weapons.Sword;
@@ -25,6 +26,8 @@ public class ThroneRoomTest {
     private Lightening lightening;
     private Dragon dragon;
     private Warlock warlock;
+    private Cleric cleric;
+    private Potion potion;
 
     @Before
     public void before(){
@@ -40,6 +43,8 @@ public class ThroneRoomTest {
         gold = new Gold (20, "Gold");
         dragon = new Dragon(200, "Dragon", 100);
         warlock = new Warlock ("Warlock", 80);
+        cleric = new Cleric ("Cleric", 70);
+        potion = new Potion ("Athelas", 30);
     }
 
     @Test
@@ -203,6 +208,30 @@ public class ThroneRoomTest {
         throneRoom.addIPlayable(warlock);
         throneRoom.battle(warlock, orc);
         assertEquals(0, orc.getHealth());
+    }
+
+
+    @Test
+    public void testTwoPlayersCanEnterRoomWithOneEnemy(){
+        dwarf.addWeapon(sword);
+        cleric.addHealable(potion);
+        throneRoom.addIEnemy(orc);
+        throneRoom.addIPlayable(dwarf);
+        throneRoom.addIPlayable(cleric);
+        throneRoom.battle(dwarf, orc);
+        assertEquals(0, orc.getHealth());
+    }
+
+    @Test
+    public void testClericCanHealDwarfAfterBattle(){
+        dwarf.addWeapon(sword);
+        cleric.addHealable(potion);
+        throneRoom.addIEnemy(orc);
+        throneRoom.addIPlayable(dwarf);
+        throneRoom.addIPlayable(cleric);
+        throneRoom.battle(dwarf, orc);
+        cleric.heal(dwarf);
+        assertEquals(0, throneRoom.numberOfEnemies());
     }
 
 
