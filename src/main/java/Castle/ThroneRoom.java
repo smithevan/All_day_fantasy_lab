@@ -55,7 +55,11 @@ public class ThroneRoom extends Room{
         if (numberOfEnemies() > 0){
             System.out.println("There is an " + enemies.get(0).getName() + " here");
             System.out.println(player.getName()+ ": I challenge you!");
-            battle(player, enemies.get(0));
+
+            for (int i = 0; i < players.size(); i++) {
+                battle(players.get(i), enemies.get(0));
+            }
+
         } else {
             System.out.println("The " + getName() + " has no enemies");
         }
