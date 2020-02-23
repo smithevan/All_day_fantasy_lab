@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="4d4672b0-1463-4e79-9ca1-c8bf0d1ec73e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/src/main/java/Castle/ThroneRoom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Castle/ThroneRoom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ThroneRoomTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ThroneRoomTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -53,16 +54,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ThroneRoomTest.testClericCanHealDwarfAfterBattle">
-    <configuration name="ClericTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="FantasyLab" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ClericTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.ThroneRoomTest.testBattleCanBeginAutomaticallyIfEnemyPresent">
     <configuration name="ClericTest.testClericCanHealOthers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FantasyLab" />
       <option name="PACKAGE_NAME" value="" />
@@ -78,6 +70,16 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="PotionTest" />
       <option name="METHOD_NAME" value="hasValue" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ThroneRoomTest.testBattleCanBeginAutomaticallyIfEnemyPresent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FantasyLab" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ThroneRoomTest" />
+      <option name="METHOD_NAME" value="testBattleCanBeginAutomaticallyIfEnemyPresent" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -105,11 +107,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ThroneRoomTest.testBattleCanBeginAutomaticallyIfEnemyPresent" />
         <item itemvalue="JUnit.ThroneRoomTest.testClericCanHealDwarfAfterBattle" />
         <item itemvalue="JUnit.ThroneRoomTest.testTwoPlayersCanEnterRoomWithOneEnemy" />
         <item itemvalue="JUnit.ClericTest.testClericCanHealOthers" />
         <item itemvalue="JUnit.PotionTest.hasValue" />
-        <item itemvalue="JUnit.ClericTest" />
       </list>
     </recent_temporary>
   </component>

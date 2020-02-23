@@ -234,6 +234,14 @@ public class ThroneRoomTest {
         assertEquals(0, throneRoom.numberOfEnemies());
     }
 
+    @Test
+    public void testBattleCanBeginAutomaticallyIfEnemyPresent(){
+        dwarf.addWeapon(sword);
+        throneRoom.addIEnemy(orc);
+        throneRoom.addIPlayable(dwarf);
+        assertEquals(0, throneRoom.numberOfEnemies());
+    }
+
 
 
 

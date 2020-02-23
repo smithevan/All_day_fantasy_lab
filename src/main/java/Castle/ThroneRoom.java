@@ -43,7 +43,7 @@ public class ThroneRoom extends Room{
     public int numberOfPlayers() {
        return players.size();
     }
-    
+
     public void addIPlayable(IPlayable player) {
         players.add(player);
         System.out.println("You have entered the " + getName());
@@ -55,6 +55,7 @@ public class ThroneRoom extends Room{
         if (numberOfEnemies() > 0){
             System.out.println("There is an " + enemies.get(0).getName() + " here");
             System.out.println(player.getName()+ ": I challenge you!");
+            battle(player, enemies.get(0));
         } else {
             System.out.println("The " + getName() + " has no enemies");
         }
