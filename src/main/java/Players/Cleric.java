@@ -13,4 +13,6 @@ public class Cleric extends Player{
         this.healables = new ArrayList<IHealable>();
     }
 
+
+
 }

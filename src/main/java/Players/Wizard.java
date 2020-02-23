@@ -7,6 +7,7 @@ import Weapons.Bow;
 import Weapons.Sword;
 import enemies.IEnemy;
 import specialPowers.ISpellable;
+import treasure.ITreasurable;
 
 import java.util.ArrayList;
 
@@ -59,5 +60,7 @@ public class Wizard extends Player implements IPlayable{
                 "(" + hitStrength + ")" + ", enemy now at " + enemy.getHealth());
         return hitStrength;
     }
+
+    public void addTreasure(ITreasurable treasure) { treasures.add(treasure);}
 
 }

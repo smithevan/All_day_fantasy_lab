@@ -6,6 +6,7 @@ import Weapons.Sword;
 import enemies.IEnemy;
 import enemies.Orc;
 import specialPowers.IWeaponable;
+import treasure.ITreasurable;
 
 import java.util.ArrayList;
 
@@ -57,6 +58,9 @@ public class Dwarf extends Player implements IPlayable{
         System.out.println("The Dwarf Has Attacked with " + hitStrength + ", enemy now at " + enemy.getHealth());
         return hitStrength;
     }
+
+
+    public void addTreasure(ITreasurable treasure) { treasures.add(treasure);}
 
 
 }

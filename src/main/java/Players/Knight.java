@@ -5,6 +5,7 @@ import Weapons.Bow;
 import Weapons.Sword;
 import enemies.IEnemy;
 import specialPowers.IWeaponable;
+import treasure.ITreasurable;
 
 import java.util.ArrayList;
 
@@ -54,4 +55,6 @@ public class Knight extends Player implements IPlayable{
         System.out.print("The Dwarf Has Attacked");
         return hitStrength;
     }
+
+    public void addTreasure(ITreasurable treasure) { treasures.add(treasure);}
 }

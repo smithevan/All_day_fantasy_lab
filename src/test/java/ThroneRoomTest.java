@@ -169,7 +169,9 @@ public class ThroneRoomTest {
     public void testPlayerCanPickUpAndAddTreasureFromRoom(){
         throneRoom.addTreasure(gold);
         throneRoom.addIPlayable(wizard);
-        
+        throneRoom.collectTreasure(wizard);
+        assertEquals(0, throneRoom.getTreasure());
+        assertEquals(1, wizard.countTreasure()); 
     }
 
 

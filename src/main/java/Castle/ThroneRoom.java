@@ -1,9 +1,6 @@
 package Castle;
 
-import Players.Barbarian;
-import Players.Dwarf;
-import Players.IPlayable;
-import Players.Knight;
+import Players.*;
 import enemies.IEnemy;
 import enemies.Orc;
 import treasure.ITreasurable;
@@ -98,6 +95,13 @@ public class ThroneRoom extends Room{
 
     public void addTreasure(ITreasurable treasure) {
         treasures.add(treasure);
+    }
+
+    public void collectTreasure(IPlayable player) {
+        for (int i = 0; i < treasures.size(); i++){
+            ITreasurable treasure = treasures.remove(i);
+            player.addTreasure(treasure);
+        }
     }
 }
 

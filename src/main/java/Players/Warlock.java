@@ -2,6 +2,7 @@ package Players;
 
 import specialPowers.ISpellable;
 import specialPowers.IWeaponable;
+import treasure.ITreasurable;
 
 import java.util.ArrayList;
 
@@ -12,5 +13,7 @@ public class Warlock extends Player{
         super(name, healingPoints);
         this.spells = new ArrayList<ISpellable>();
     }
+
+    public void addTreasure(ITreasurable treasure) { treasures.add(treasure);}
 
 }
