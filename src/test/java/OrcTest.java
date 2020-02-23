@@ -16,12 +16,12 @@ public class OrcTest {
 
     @Before
     public void before(){
-        orc = new Orc("OrcName", 10, 40);
+        orc = new Orc("Orc", 10, 40);
         dwarf = new Dwarf ("Dwarf", 40);
     }
     @Test
     public void hasName(){
-        assertEquals("OrcName", orc.getName());
+        assertEquals("Orc", orc.getName());
     }
 
     @Test

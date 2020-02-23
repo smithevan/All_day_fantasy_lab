@@ -36,6 +36,10 @@ public class Dwarf extends Player implements IPlayable{
         weapons.add(weapon);
     }
 
+    public void removeWeapon(IWeaponable weapon) {
+        weapons.remove(weapon);
+    }
+
     public void takeDamage(int injury) {
         healingPoints -= injury;
         if (healingPoints <= 0){
@@ -53,4 +57,6 @@ public class Dwarf extends Player implements IPlayable{
         System.out.println("The Dwarf Has Attacked with " + hitStrength + ", enemy now at " + enemy.getHealth());
         return hitStrength;
     }
+
+
 }

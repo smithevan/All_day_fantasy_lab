@@ -39,6 +39,7 @@ public class DwarfTest {
     public void hasHealingPoints(){
         assertEquals(50, dwarf.getHealingPoints());
     }
+    
 
     @Test
     public void testWeaponsArrayBeginsEmpty(){
@@ -66,6 +67,14 @@ public class DwarfTest {
     @Test
     public void testCanAddWeapon(){
         dwarf.addWeapon(sword);
+        assertEquals(1, dwarf.weaponCount());
+    }
+
+    @Test
+    public void testCanRemoveWeapon(){
+        dwarf.addWeapon(sword);
+        dwarf.addWeapon(sword2);
+        dwarf.removeWeapon(sword);
         assertEquals(1, dwarf.weaponCount());
     }
 

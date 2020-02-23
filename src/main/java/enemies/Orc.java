@@ -12,6 +12,10 @@ public class Orc extends Enemy{
         super(name, strength, health);
     }
 
+    public String getName(){
+        return name;
+    }
+
 
     public int damage(int injury) {
         health -= injury;

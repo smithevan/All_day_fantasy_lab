@@ -34,6 +34,10 @@ public class Barbarian extends Player implements IPlayable{
         weapons.add(weapon);
     }
 
+    public void removeWeapon(IWeaponable weapon) {
+        weapons.remove(weapon);
+    }
+
     public void takeDamage(int injury) {
         healingPoints -= injury;
     }

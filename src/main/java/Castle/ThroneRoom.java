@@ -6,6 +6,7 @@ import Players.IPlayable;
 import Players.Knight;
 import enemies.IEnemy;
 import enemies.Orc;
+import treasure.ITreasurable;
 
 public class ThroneRoom extends Room{
 
@@ -28,7 +29,17 @@ public class ThroneRoom extends Room{
     }
 
     public void addIEnemy(IEnemy enemy) {
+
         enemies.add(enemy);
+    }
+
+    public void removeIEnemy(IEnemy enemy) {
+        enemies.remove(enemy);
+        if (enemies.size() == 0) {
+            System.out.println("The Room Is Now Empty");
+        }else {
+            System.out.println("There are still more enemies!");
+        }
     }
 
     public void addBarbarian(Barbarian barbarian) {
@@ -45,17 +56,20 @@ public class ThroneRoom extends Room{
 
     public void addIPlayable(IPlayable player) {
         players.add(player);
-    }
-
-    public String addDwarf(Dwarf dwarf) {
-        if (enemies.size() > 0) {
-            players.add(dwarf);
-            return "I challenge you to mortal battle";
-        }else {
-            players.add(dwarf);
-            return "";
+        System.out.println("You have entered the " + getName());
+        if (treasures.size() > 0 ){
+            System.out.println("There is treasure here!");
+        } else {
+            System.out.println("There is no treasure here");
+        }
+        if (numberOfEnemies() > 0){
+            System.out.println("There is an " + enemies.get(0).getName() + " here");
+            System.out.println(player.getName()+ ": I challenge you!");
+        } else {
+            System.out.println("The " + getName() + " has no enemies");
         }
     }
+
 
     public void battle(IPlayable player, IEnemy enemy) {
         while (enemy.getHealth() != 0  && player.getHealingPoints() != 0) {
@@ -70,8 +84,21 @@ public class ThroneRoom extends Room{
                 System.out.println("The Player Has Been Defeated");
             } else if (enemy.getHealth() == 0) {
                 System.out.println("The Enemy Has Been Defeated");
+                removeIEnemy(enemy);
+            }
+            if (treasures.size() > 0){
+                System.out.println("You have found treasure");
+
             }
         }
+
+    public int getTreasure() {
+        return treasures.size();
+    }
+
+    public void addTreasure(ITreasurable treasure) {
+        treasures.add(treasure);
+    }
 }
 
     //begin with weapon strength

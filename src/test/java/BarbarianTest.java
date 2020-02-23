@@ -68,4 +68,11 @@ public class BarbarianTest {
         barbarian.addWeapon(sword);
         assertEquals(1, barbarian.weaponCount());
     }
+
+    @Test
+    public void testCanRemoveWeapon(){
+        barbarian.addWeapon(sword);
+        barbarian.removeWeapon(sword);
+        assertEquals(0, barbarian.weaponCount());
+    }
 }

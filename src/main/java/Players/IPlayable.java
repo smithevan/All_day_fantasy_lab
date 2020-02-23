@@ -7,4 +7,5 @@ public interface IPlayable {
     void takeDamage(int injury);
     int getHealingPoints();
     int attack(IEnemy enemy);
+    String getName();
 }

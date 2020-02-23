@@ -12,7 +12,7 @@ public class FireballTest {
 
     @Before
     public void before(){
-        fireball = new Fireball( 50);
+        fireball = new Fireball( 50, "Fireball");
 
     }
 

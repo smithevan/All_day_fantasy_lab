@@ -13,7 +13,7 @@ public class LighteningTest {
 
     @Before
     public void before(){
-        lightening = new Lightening( 50);
+        lightening = new Lightening( 50, "Lightening");
 
     }
 
@@ -21,5 +21,12 @@ public class LighteningTest {
     public void hasStrength(){
         assertEquals( 50, lightening.getStrength());
     }
+
+
+//    @Test
+//    public void testLighteningCanBeCast() {
+//        int attackStrength = lightening.castSpell();
+//        assertEquals(50, attackStrength);
+//    }  works, but cannot test a random number
 
 }
