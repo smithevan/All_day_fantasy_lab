@@ -39,18 +39,11 @@ public class ThroneRoom extends Room{
         }
     }
 
-    public void addBarbarian(Barbarian barbarian) {
-        players.add(barbarian);
-    }
 
     public int numberOfPlayers() {
        return players.size();
     }
-
-    public void addKnight(Knight knight) {
-        players.add(knight);
-    }
-
+    
     public void addIPlayable(IPlayable player) {
         players.add(player);
         System.out.println("You have entered the " + getName());
@@ -106,9 +99,5 @@ public class ThroneRoom extends Room{
     }
 }
 
-    //begin with weapon strength
-    //begin with enemy strength
-    //multiply weapon strength by random number, deduct output from enemy health
-    //multiply enemy strength by random number, deduct output from player health
-    //continue looping until someone is zero.
+
 
