@@ -12,7 +12,7 @@ public class GoldTest {
 
     @Before
     public void before(){
-        gold = new Gold( 23);
+        gold = new Gold( 23, "Gold");
 
     }
     @Test

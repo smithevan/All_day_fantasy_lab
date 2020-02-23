@@ -4,21 +4,32 @@
     <list default="true" id="4d4672b0-1463-4e79-9ca1-c8bf0d1ec73e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Castle/ThroneRoom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Castle/ThroneRoom.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Players/Barbarian.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Players/Barbarian.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Players/Cleric.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Players/Cleric.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Players/Dwarf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Players/Dwarf.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Players/IPlayable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Players/IPlayable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Players/Knight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Players/Knight.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Players/Warlock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Players/Warlock.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Players/Wizard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Players/Wizard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mythicalcreatures/Creatures.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mythicalcreatures/Creature.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mythicalcreatures/Dragon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mythicalcreatures/Dragon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mythicalcreatures/Ogre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mythicalcreatures/Ogre.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/treasure/Gem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/treasure/Gem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/treasure/Gold.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/treasure/Gold.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/treasure/ITreasurable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/treasure/ITreasurable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/treasure/Treasure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/treasure/Treasure.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/AxeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AxeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/BarbarianTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BarbarianTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/GemTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/GemTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/GoldTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/GoldTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ThroneRoomTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ThroneRoomTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/WizardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/WizardTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Castle/ThroneRoom.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Castle/ThroneRoom.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Players/Barbarian.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Players/Barbarian.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Players/Dwarf.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Players/Dwarf.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Players/Knight.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Players/Knight.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Players/Warlock.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Players/Warlock.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Players/Wizard.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Players/Wizard.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/treasure/Gem.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/treasure/Gem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/treasure/Gold.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/treasure/Gold.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/treasure/ITreasurable.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/treasure/ITreasurable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/treasure/Treasure.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/treasure/Treasure.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/AxeTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/AxeTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/BarbarianTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/BarbarianTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/GemTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/GemTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/GoldTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/GoldTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/ThroneRoomTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ThroneRoomTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/WizardTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/WizardTest.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -69,13 +80,12 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ThroneRoomTest.testPlayerCanPickUpAndAddTreasureFromRoom">
-    <configuration name="ThroneRoomTest.testOrcAndWizardCanAttackWithSpellsUntilOneIsDefeated" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.BarbarianTest">
+    <configuration name="BarbarianTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FantasyLab" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ThroneRoomTest" />
-      <option name="METHOD_NAME" value="testOrcAndWizardCanAttackWithSpellsUntilOneIsDefeated" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="BarbarianTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -90,21 +100,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WizardTest.testWizardCanAddTreasure" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ThroneRoomTest.testWizardCanPickUpAndAddTreasureFromRoom" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FantasyLab" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="WizardTest" />
-      <option name="METHOD_NAME" value="testWizardCanAddTreasure" />
+      <option name="MAIN_CLASS_NAME" value="ThroneRoomTest" />
+      <option name="METHOD_NAME" value="testWizardCanPickUpAndAddTreasureFromRoom" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WizardTest.testWizardCanTakeDamage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="WizardTest.testWizardCanAddTreasure" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FantasyLab" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="WizardTest" />
-      <option name="METHOD_NAME" value="testWizardCanTakeDamage" />
+      <option name="METHOD_NAME" value="testWizardCanAddTreasure" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -122,11 +132,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ThroneRoomTest.testPlayerCanPickUpAndAddTreasureFromRoom" />
+        <item itemvalue="JUnit.BarbarianTest" />
+        <item itemvalue="JUnit.ThroneRoomTest.testWizardCanPickUpAndAddTreasureFromRoom" />
         <item itemvalue="JUnit.WizardTest.testWizardCanAddTreasure" />
+        <item itemvalue="JUnit.ThroneRoomTest.testPlayerCanPickUpAndAddTreasureFromRoom" />
         <item itemvalue="JUnit.WizardTest.testWizardTreasureBeginsEmpty" />
-        <item itemvalue="JUnit.ThroneRoomTest.testOrcAndWizardCanAttackWithSpellsUntilOneIsDefeated" />
-        <item itemvalue="JUnit.WizardTest.testWizardCanTakeDamage" />
       </list>
     </recent_temporary>
   </component>

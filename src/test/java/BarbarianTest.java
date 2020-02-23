@@ -9,10 +9,10 @@ import specialPowers.IWeaponable;
 import static org.junit.Assert.assertEquals;
 
 public class BarbarianTest {
-    Barbarian barbarian;
-    Sword sword;
-    Axe axe;
-    Bow bow;
+    private Barbarian barbarian;
+    private Sword sword;
+    private Axe axe;
+    private Bow bow;
 
 
     @Before

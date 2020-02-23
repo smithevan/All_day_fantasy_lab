@@ -101,6 +101,7 @@ public class ThroneRoom extends Room{
         for (int i = 0; i < treasures.size(); i++){
             ITreasurable treasure = treasures.remove(i);
             player.addTreasure(treasure);
+            System.out.println(player.getName() + " has collected " + treasure.getName());
         }
     }
 }

@@ -61,6 +61,6 @@ public class Wizard extends Player implements IPlayable{
         return hitStrength;
     }
 
-    public void addTreasure(ITreasurable treasure) { treasures.add(treasure);}
+
 
 }

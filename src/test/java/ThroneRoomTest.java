@@ -37,7 +37,7 @@ public class ThroneRoomTest {
         dwarf = new Dwarf ("Dwarf", 60);
         lightening = new Lightening(120, "Lightening");
         sword = new Sword (20);
-        gold = new Gold (20);
+        gold = new Gold (20, "Gold");
     }
 
     @Test
@@ -166,12 +166,12 @@ public class ThroneRoomTest {
     }
 
     @Test
-    public void testPlayerCanPickUpAndAddTreasureFromRoom(){
+    public void testWizardCanPickUpAndAddTreasureFromRoom(){
         throneRoom.addTreasure(gold);
         throneRoom.addIPlayable(wizard);
         throneRoom.collectTreasure(wizard);
         assertEquals(0, throneRoom.getTreasure());
-        assertEquals(1, wizard.countTreasure()); 
+        assertEquals(1, wizard.countTreasure());
     }
 
 

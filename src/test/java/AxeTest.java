@@ -6,7 +6,7 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
 public class AxeTest {
-    Axe axe;
+    private Axe axe;
 
 
     @Before

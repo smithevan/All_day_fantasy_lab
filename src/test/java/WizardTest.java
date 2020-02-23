@@ -24,7 +24,7 @@ public class WizardTest {
         wizard = new Wizard("Gandalf", 80);
         fireball = new Fireball(80, "Fireball");
         lightening = new Lightening(70, "Lightening");
-        gold = new Gold (20);
+        gold = new Gold (20, "Gold");
     }
     @Test
     public void hasName(){

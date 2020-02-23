@@ -12,7 +12,7 @@ public class GemTest {
 
     @Before
     public void before(){
-        gem = new Gem( 23);
+        gem = new Gem( 23, "Gem");
 
     }
     @Test
